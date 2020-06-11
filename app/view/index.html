@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雨量查詢</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+
+</head>
+<body style="text-align: center;">
+
+   <div > 
+    <select class="form-control" id="select1" style="width:200px;position:relative;margin:auto;margin-top:40px;">
+        <option value='466880'>板橋</option>
+        <option value='466900'>淡水</option>
+        <option value='466910'>鞍部</option>
+        <option value='466920'>台北</option>
+        <option value='466930'>竹子湖</option>
+        <option value='466940'>基隆</option>
+        <option value='466950'>彭佳嶼</option>
+        <option value='466990'>花蓮</option>
+        <option value='467050'>新屋</option>
+        <option value='467080'>蘇澳</option>
+        <option value='467080'>宜蘭</option>
+        <option value='467110'>金門</option>
+        <option value='467300'>東吉島</option>
+        <option value='467350'>澎湖</option>
+        <option value='467410'>台南</option>
+        <option value='467440'>高雄</option>
+        <option value='467480'>嘉義</option>
+        <option value='467490'>台中</option>
+        <option value='467530'>阿里山</option>
+        <option value='467540'>大武</option>
+        <option value='467550'>玉山</option>
+        <option value='467571'>新竹</option>
+        <option value='467590'>恆春</option>
+        <option value='467610'>成功</option>
+        <option value='467620'>蘭嶼</option>
+        <option value='467650'>日月潭</option>
+        <option value='467660'>台東</option>
+        <option value='467770'>梧棲</option>
+        <option value='467790'>墾丁</option>
+        <option value='647990'>馬祖</option>
+    </select>
+
+    <button class='btn btn-primary' id="btn1" style="position:relative; top:-40px;left:150px;">送出</button>
+    <p>請輸入要查<input id='dayFrom' type="text" style="width:90px"/>到<input id='dayTo' type="text" style="width:90px"/></p>
+    
+    </div>
+
+    <table class="table" style="width:1200px; margin:auto;margin-top:50px;">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">StationID</th>
+            <th scope="col">Date</th>
+            <th scope="col">StationName</th>
+            <th scope="col">Precipitation(mm)</th>
+          </tr>
+        </thead>
+        <tbody id ='con'>
+        </tbody>
+      </table>
+      
+    
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="./js/font.js"></script>
+</html>
+
